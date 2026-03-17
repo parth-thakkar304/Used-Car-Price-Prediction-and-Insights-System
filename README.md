@@ -1,120 +1,92 @@
-<h1 align="center">🚗 Used Car Price Prediction & Insights System</h1>
+# 🚗 Used Car Price Prediction & Insights System
 
-<p align="center">
-A Machine Learning Based System to Predict Used Car Prices & Generate Market Insights
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python">
-  <img src="https://img.shields.io/badge/ML-Scikit--Learn-orange?style=for-the-badge&logo=scikit-learn">
-  <img src="https://img.shields.io/badge/Data-Pandas-yellow?style=for-the-badge&logo=pandas">
-  <img src="https://img.shields.io/badge/Visualization-Matplotlib-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge">
-  <img src="https://img.shields.io/badge/License-MIT-red?style=for-the-badge">
-</p>
+A Machine Learning–based system to predict used car prices and generate market insights.
 
 ---
 
-## 📌 Project Overview
+## 📌 Overview
 
-The **Used Car Price Prediction and Insights System** is a Machine Learning–based project developed as part of the **Semester Guided Project (SGP)**.
+This project is developed as part of a **Semester Guided Project (SGP)**. It aims to build an end-to-end pipeline that:
 
-The goal of this system is to:
-
-- Predict the resale price of used cars
-- Analyze pricing trends
-- Provide meaningful insights into the used car market
-
-The prediction is based on important vehicle attributes such as:
-
-- Brand  
-- Model  
-- Manufacturing Year  
-- Age of the car  
-- Kilometers driven  
-- Fuel type  
-- Transmission type  
-- Ownership history  
+* Predicts resale prices of used cars
+* Provides analytical insights into the used car market
+* Offers a user-friendly web interface for predictions
 
 ---
 
-## 🎯 Project Objectives
+## 🎯 Current Status
 
-- Perform **data integration** from multiple datasets  
-- Clean and preprocess real-world used car data  
-- Conduct **Exploratory Data Analysis (EDA)**  
-- Build accurate **regression models**  
-- Provide actionable insights for **buyers, sellers, and businesses**
+### ✅ Completed
 
----
+* Data Collection
+* Data Integration
+* Data Cleaning & Preprocessing
+* Categorical Encoding
+* Model Training & Evaluation
+* Basic Frontend (Next.js)
 
-## 🗂 Dataset Information
+### ⏳ In Progress
 
-This project uses **two used-car datasets** that were:
+* FastAPI Backend Integration
+* Frontend–Backend Connection
 
-1. Merged and integrated  
-2. Cleaned and standardized  
-3. Prepared for encoding and feature engineering
-4. The final cleaned and integrated dataset is available in:
-   data/processed/new_final_dataset.csv 
+### 🔜 Upcoming
 
-### ✅ Current Progress
-
-- ✔ Data collection completed  
-- ✔ Data integration completed  
-- ✔ Data cleaning & preprocessing completed  
-- ✔ Categorical encoding completed (Label Encoding and One-Hot Encoding applied)  
-- ⏳ Outlier detection pending  
-- ⏳ Some EDA tasks pending  
-- ⏳ Feature engineering pending  
-- ⏳ Model training pending  
-- ⏳ Deployment pending  
+* Deployment (Full Stack)
+* Advanced Feature Engineering
+* Model Optimization
 
 ---
 
-## ⚙️ Data Preprocessing
+## 🧠 Features Used
 
-The following preprocessing tasks were performed:
-
-- Handling missing values  
-- Removing duplicates  
-- Standardizing column names  
-- Converting categorical values to lowercase  
-- Creating derived features such as **car age**  
-- Applying **Label Encoding and One-Hot Encoding** to categorical variables  
-- Preparing final cleaned dataset for modeling  
-
----
-
-## 🧠 Machine Learning Workflow
-
-The upcoming ML stages include:
-
-- Outlier detection and treatment  
-- Feature selection and engineering  
-- Training regression models such as:
-
-  - Linear Regression  
-  - Decision Tree Regressor  
-  - Random Forest Regressor  
-  - Gradient Boosting (if applicable)  
-
-- Model evaluation using:
-
-  - MAE (Mean Absolute Error)  
-  - RMSE (Root Mean Squared Error)  
-  - R² Score  
+* Brand
+* Model
+* Year
+* Car Age
+* Kilometers Driven
+* Fuel Type
+* Transmission
+* Ownership
 
 ---
 
-## 🔄 Project Workflow
+## ⚙️ Machine Learning Models
 
-Data Collection → Data Cleaning → EDA → Feature Engineering →
-Model Training → Model Evaluation → Deployment
+The following regression models were implemented:
+
+Test Using :-
+* Linear Regression
+* Decision Tree Regressor
+* Random Forest Regressor
+
+Actual Model Taken :-
+* XGBOOST
+
+### 📊 Evaluation Metrics
+
+* MAE (Mean Absolute Error)
+* RMSE (Root Mean Squared Error)
+* R² Score
 
 ---
 
-## 🏗 Project Structure
+## 🏗️ System Architecture
+
+```
+Frontend (Next.js)
+        ↓
+Backend API (FastAPI)
+        ↓
+Machine Learning Model
+        ↓
+Prediction Output
+```
+
+---
+
+## 📂 Project Structure
+
 ```
 📦 Used-Car-Price-Prediction-and-Insights-System
 ┣ 📂 data
@@ -123,50 +95,65 @@ Model Training → Model Evaluation → Deployment
 ┣ 📂 notebooks
 ┃ ┣ 📓 Data_Integration_Cleaning.ipynb
 ┃ ┗ 📓 Data_Modelling.ipynb
-┣ 📂 src
+┣ 📂 backend (FastAPI - upcoming)
+┣ 📂 frontend (Next.js)
 ┣ 📄 README.md
 ┣ 📄 requirements.txt
 ┗ 📄 .gitignore
-
 ```
 
 ---
 
-## 💻 Tech Stack
+## ⚙️ Tech Stack
 
-| Category | Tools Used |
-|----------|------------|
-| Programming Language | Python |
-| Data Processing | Pandas, NumPy |
-| Data Visualization | Matplotlib, Seaborn |
-| Machine Learning | Scikit-learn |
-| Development Environment | Jupyter Notebook |
+* **Python** (Pandas, NumPy, Scikit-learn)
+* **FastAPI** (Backend API)
+* **Next.js** (Frontend)
+* **Matplotlib / Seaborn** (Visualization)
 
 ---
 
-## 🚀 Future Scope
+## 🚀 How to Run (Upcoming Full Setup)
 
-- Deploy the trained model using **Flask or Streamlit**
-- Create an interactive **web-based interface**
-- Provide real-time market insights
-- Improve accuracy using advanced ML models (XGBoost)
-- Integrate model API for external usage
+### 1. Backend (FastAPI)
+
+```bash
+cd backend
+uvicorn main:app --reload
+```
+
+### 2. Frontend (Next.js)
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🔮 Future Improvements
+
+* Deploy using Docker + Cloud (AWS / Vercel)
+* Add real-time price trend analytics
+* Improve model accuracy (XGBoost / Ensemble)
+* Add authentication system
 
 ---
 
 ## 👨‍💻 Contributors
 
-- **Yug Umrania**
-- **Parth Thakkar**
+* Yug Umrania
+* Parth Thakkar
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
+MIT License
 
 ---
 
-## 📢 Disclaimer
+## 📢 Note
 
-This repository is part of an **academic Software Group Project (SGP)** and is inte
+This project is developed for academic purposes under SGP but follows real-world ML system design principles.
