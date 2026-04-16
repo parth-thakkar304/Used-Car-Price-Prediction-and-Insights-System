@@ -1,4 +1,4 @@
-/* Professional SVG Icons for CarVal AI */
+/* Professional SVG Icons for CarDealDekho */
 
 const iconBase = {
   fill: "none",
@@ -349,24 +349,61 @@ export const Icons = {
     </svg>
   ),
 
-  // Logo - Custom car + AI icon
+  // Logo - Custom 3D-Look Luxury Car breaking out of the circle + Road + AI Sparkle
   Logo: (props: React.SVGProps<SVGSVGElement>) => (
     <svg {...iconBase} viewBox="0 0 32 32" {...props}>
-      <path
-        d="M8 20h16M8 20a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm16 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM4 17h24M5 17l2-5h14l3 5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+      {/* Background Arch & The Road (Static) */}
+      <path 
+        d="M 4 23.5 A 10 10 0 1 1 24 23.5" 
+        stroke="var(--text-muted)" 
+        strokeWidth="1.5" 
+        opacity="0.5" 
+        fill="none" 
       />
-      <circle cx="16" cy="10" r="2" stroke="currentColor" strokeWidth="1.5" fill="none" />
-      <path
-        d="M16 6v2M16 12v2M12 8h2M18 8h2"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
+      <path 
+        d="M 2 23.5 h 28" 
+        stroke="var(--text-muted)" 
+        strokeWidth="2" 
+        strokeLinecap="round" 
       />
+      
+      {/* AI Sparkles - Fade in after the car arrives */}
+      <g className="animate-sparkle">
+        <path d="M28 10 Q28 13 31 13 Q28 13 28 16 Q28 13 25 13 Q28 13 28 10Z" fill="var(--warning)" />
+        <path d="M9 8 Q9 10 11 10 Q9 10 9 12 Q9 10 7 10 Q9 10 9 8Z" fill="var(--warning)" opacity="0.8" />
+      </g>
+
+      {/* Car & Speed Lines - Animated to drive in */}
+      <g className="animate-car-drive-in">
+        {/* Speed Lines */}
+        <path d="M 2 18 h 3 M 4 21 h 2 M 3 19.5 h 2" stroke="var(--accent-secondary)" strokeWidth="1.5" strokeLinecap="round" opacity="0.8" />
+
+        {/* Larger, Luxurious Car Profile breaking the frame */}
+        <path
+          d="M7 22v-2.5l3.5-4h6l4.5 3.5h4.5a1.5 1.5 0 0 1 1.5 1.5v1.5h-1.5a2.5 2.5 0 0 0-5 0h-7a2.5 2.5 0 0 0-5 0z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        
+        {/* Sleek Side Window Detail */}
+        <path
+          d="M 12.5 16.5 h 4 l 2.5 2.5 h -8 z"
+          stroke="currentColor"
+          strokeWidth="1"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        
+        {/* Luxury Inner Wheels */}
+        <circle cx="11" cy="22" r="1.5" fill="none" stroke="currentColor" strokeWidth="1" />
+        <circle cx="11" cy="22" r="0.5" fill="currentColor" />
+        <circle cx="23" cy="22" r="1.5" fill="none" stroke="currentColor" strokeWidth="1" />
+        <circle cx="23" cy="22" r="0.5" fill="currentColor" />
+      </g>
     </svg>
   ),
 };

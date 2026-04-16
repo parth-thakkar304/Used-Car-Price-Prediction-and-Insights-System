@@ -474,7 +474,7 @@ export default function Home() {
         }}
       >
         <p style={{ marginBottom: "12px" }}>
-          © {new Date().getFullYear()} CarVal AI — Built with{" "}
+          © {new Date().getFullYear()} CarDealDekho — Built with{" "}
           <Icons.Brain style={{ width: "14px", height: "14px", display: "inline", verticalAlign: "middle" }} />{" "}
           XGBoost &{" "}
           <Icons.Heart style={{ width: "14px", height: "14px", display: "inline", verticalAlign: "middle" }} />{" "}

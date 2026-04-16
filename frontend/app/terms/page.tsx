@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions — CarVal AI",
+  title: "Terms & Conditions — CarDealDekho",
   description:
-    "Read the terms and conditions for using CarVal AI's used car price prediction service. Understand your rights and responsibilities.",
+    "Read the terms and conditions for using CarDealDekho's used car price prediction service. Understand your rights and responsibilities.",
 };
 
 export default function TermsPage() {
@@ -34,7 +34,7 @@ export default function TermsPage() {
             gap: "8px",
           }}
         >
-          <span className="gradient-text">CarVal AI</span>
+          <span className="gradient-text">CarDealDekho</span>
         </Link>
         <Link href="/">
           <button className="btn-secondary" style={{ padding: "8px 20px", fontSize: "0.85rem" }}>
@@ -68,7 +68,7 @@ export default function TermsPage() {
 
         <div className="glass-card" style={{ padding: "40px 36px" }}>
           <p style={{ color: "var(--text-secondary)", lineHeight: 1.7, marginBottom: "32px" }}>
-            By accessing and using CarVal AI (&quot;the Service&quot;), you agree to be bound by these Terms and Conditions. 
+            By accessing and using CarDealDekho (&quot;the Service&quot;), you agree to be bound by these Terms and Conditions. 
             If you disagree with any part of these terms, you may not access the Service.
           </p>
 
@@ -94,7 +94,7 @@ export default function TermsPage() {
               {
                 subtitle: "",
                 details: [
-                  "CarVal AI provides estimated used car price predictions using machine learning (XGBoost) algorithms",
+                  "CarDealDekho provides estimated used car price predictions using machine learning (XGBoost) algorithms",
                   "Predictions are based on historical market data and statistical models",
                   "The Service is provided for informational and educational purposes only",
                   "This is an academic project developed as part of a Semester Guided Project (SGP)",
@@ -127,7 +127,7 @@ export default function TermsPage() {
               {
                 subtitle: "",
                 details: [
-                  "CarVal AI and its contributors shall not be liable for any direct, indirect, incidental, special, or consequential damages",
+                  "CarDealDekho and its contributors shall not be liable for any direct, indirect, incidental, special, or consequential damages",
                   "We are not responsible for any financial losses resulting from reliance on our predictions",
                   "Users assume full responsibility for any decisions made based on the information provided by the Service",
                   "Our total liability shall not exceed the amount paid by you to use the Service (currently zero, as the Service is free)",
@@ -253,7 +253,7 @@ export default function TermsPage() {
                 subtitle: "",
                 details: [
                   "For questions about these Terms and Conditions, please contact:",
-                  "Project: CarVal AI — Used Car Price Prediction & Insights System",
+                  "Project: CarDealDekho — Used Car Price Prediction & Insights System",
                   "Contributors: Yug Umrania, Parth Thakkar",
                   "This is an academic project developed for educational purposes.",
                 ],
@@ -273,7 +273,7 @@ export default function TermsPage() {
           fontSize: "0.85rem",
         }}
       >
-        <p>© {new Date().getFullYear()} CarVal AI — Built for educational purposes</p>
+        <p>© {new Date().getFullYear()} CarDealDekho — Built for educational purposes</p>
       </footer>
     </div>
   );

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — CarVal AI",
+  title: "Privacy Policy — CarDealDekho",
   description:
-    "Learn how CarVal AI collects, uses, and protects your personal information. Read our privacy policy for the Used Car Price Prediction system.",
+    "Learn how CarDealDekho collects, uses, and protects your personal information. Read our privacy policy for the Used Car Price Prediction system.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
             gap: "8px",
           }}
         >
-          <span className="gradient-text">CarVal AI</span>
+          <span className="gradient-text">CarDealDekho</span>
         </Link>
         <Link href="/">
           <button className="btn-secondary" style={{ padding: "8px 20px", fontSize: "0.85rem" }}>
@@ -68,7 +68,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="glass-card" style={{ padding: "40px 36px" }}>
           <p style={{ color: "var(--text-secondary)", lineHeight: 1.7, marginBottom: "32px" }}>
-            CarVal AI (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. 
+            CarDealDekho (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. 
             This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our 
             used car price prediction service.
           </p>
@@ -230,7 +230,7 @@ export default function PrivacyPolicyPage() {
                 subtitle: "",
                 details: [
                   "If you have questions about this Privacy Policy, please contact us at:",
-                  "Project: CarVal AI — Used Car Price Prediction & Insights System",
+                  "Project: CarDealDekho — Used Car Price Prediction & Insights System",
                   "Contributors: Yug Umrania, Parth Thakkar",
                   "This is an academic project developed for educational purposes.",
                 ],
@@ -250,7 +250,7 @@ export default function PrivacyPolicyPage() {
           fontSize: "0.85rem",
         }}
       >
-        <p>© {new Date().getFullYear()} CarVal AI — Built for educational purposes</p>
+        <p>© {new Date().getFullYear()} CarDealDekho — Built for educational purposes</p>
       </footer>
     </div>
   );

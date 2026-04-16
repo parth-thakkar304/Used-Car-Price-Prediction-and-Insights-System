@@ -254,9 +254,9 @@ export default function PredictionForm() {
             gap: "8px",
           }}
         >
-          <Icons.Logo style={{ width: "28px", height: "28px", color: "var(--accent-primary)" }} />
+          <Icons.Logo style={{ width: "42px", height: "42px", color: "var(--accent-primary)" }} />
           <span className="gradient-text" style={{ fontSize: "1.2rem" }}>
-            CarVal AI
+            CarDealDekho
           </span>
         </Link>
         <Link href="/">
